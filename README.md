@@ -296,7 +296,7 @@ Sample test mask (ground_truth)<br>
 Inferred test masks<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/inferred_test_mask.png" width="1024" height="auto"><br>
 <br>
-The inferred masks above seem to be larger than the ground_truth masks in <b>./dataset/Cropped-Pancreas/test/masks</b> folder, 
+The inferred white mask regions above seem to be slightly larger than that of ground_truth in <b>./dataset/Cropped-Pancreas/test/masks</b> folder, 
 probably this is caused by the parameter settings in [mask] section.<br>
 You may be necessary to change the blur parameter to be False as show below.<br>
 <pre>
