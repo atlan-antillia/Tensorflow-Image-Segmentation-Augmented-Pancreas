@@ -76,7 +76,6 @@ Please expand the downloaded ImageMaskDataset and place them under <b>./dataset<
         └─masks
 </pre>
  
- 
 <b>Cropped-Pancreas Dataset Statistics</b><br>
 <img src ="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/Cropped-Pancreas_Statistics.png" width="512" height="auto"><br>
 As mentioned in <a href="https://github.com/atlan-antillia/Pancreas-ImageMask-Dataset">Pancreas-ImageMask-Dataset</a>, 
@@ -175,8 +174,7 @@ sigmoid     = 8
 </pre>
 Please note that 
 <a href="./src/ImageMaskAugmentor.py">
-ImageMaskAugmentor.py</a> reads the parameters in [generator] and [augmentor] sections, and yields some images and mask files to be used 
-for the training and evaluation processes of the UNet Model. 
+ImageMaskAugmentor.py</a> reads the parameters in [generator] and [augmentor] sections, and yields some images and mask to be used for the training and evaluation process of the UNet Model. 
 <pre>
 [augmentor]
 vflip    = False
@@ -220,7 +218,7 @@ python ../../../src/TensorflowUNetGeneratorTrainer.py ./train_eval_infer.config
 </pre>
 Train console output:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/train_console_output_at_epoch_53.png" width="720" height="auto"><br>
-<br>
+
 As shown above, at epoch 43, the val_loss became 0.1609, which is slightly better (lower) than that value 0.2259 of 
 the console output of the first experiment.<br>
 <br>
@@ -233,7 +231,7 @@ Train metrics:<br>
 Train losses:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/train_losses_at_epoch_53.png" width="720" height="auto"><br>
 <br>
-The following debug setting is helpful whether your parameters settings in [augmentor] section are good or not.
+The following debug setting is helpful whether your parameters in [augmentor] section are good or not.
 <pre>
 [generator]
 debug     = True
