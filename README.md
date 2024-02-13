@@ -298,7 +298,7 @@ Inferred test masks<br>
 <br>
 The inferred masks above seem to be larger than the ground_truth masks in <b>./dataset/Cropped-Pancreas/test/masks</b> folder, 
 probably this is caused by the parameter settings in [mask] section.<br>
-It is much better to set the blur parameter to be False as show below.<br>
+You may be necessary to change the blur parameter to be False as show below.<br>
 <pre>
 [mask]
 blur      = False
