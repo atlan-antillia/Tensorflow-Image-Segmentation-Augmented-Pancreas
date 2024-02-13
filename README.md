@@ -174,7 +174,7 @@ sigmoid     = 8
 </pre>
 Please note that 
 <a href="./src/ImageMaskAugmentor.py">
-ImageMaskAugmentor.py</a> reads the parameters in [generator] and [augmentor] sections, and yields some images and mask to be used for the training and evaluation process of the UNet Model. 
+ImageMaskAugmentor.py</a> reads the parameters in [generator] and [augmentor] sections, and yields some images and mask depending on the batch_size, which are used for the training and evaluation process of the UNet Model. 
 <pre>
 [augmentor]
 vflip    = False
