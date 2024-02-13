@@ -236,7 +236,7 @@ The following debug setting is helpful whether your parameters in [augmentor] se
 [generator]
 debug     = True
 </pre>
-You can see the yielded images and mask files used the actual train-eval process in the following folders under
+You can check the yielded images and mask files used in the actual train-eval process in the following folders under
 <b>./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/</b>.<br> 
 <pre>
 generated_images_dir
