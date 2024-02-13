@@ -93,7 +93,7 @@ However, simply increasing the number of image and mask files does not necessari
 This <a href="./src/TensorflowUNet.py">TensorflowUNet</a> model is slightly flexibly customizable by a configuration file.<br>
 For example, <b>TensorflowSlightlyFlexibleUNet-Augmented-Pancreas</b> model can be customizable
 by using the following <a href="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/train_eval_infer.config">
-train_eval_infer.config file.</a>
+train_eval_infer.config</a> file.
 <pre>
 ; train_eval_infer.config
 ; Pancreas, GENERATOR_MODE=True
