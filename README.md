@@ -5,7 +5,7 @@ the <a href="https://github.com/sarah-antillia/Tensorflow-Image-Segmentation-API
 <a href="https://drive.google.com/file/d/141HL4nRT8LZoqtxk2un6cM-LDuZa7jtO/view?usp=sharing"> Cropped-Pancreas-ImageMask-Dataset</a>
 <br>
 <br>
-In order to improve segmentation accuracy, we will use a dataset augmentation Python script <a href="./src/ImageMaskAugmentor.py">
+In order to improve segmentation accuracy, we will use an online dataset augmentation strategy using Python script <a href="./src/ImageMaskAugmentor.py">
 ImageMaskAugmentor.py</a> to train a Pancreas Segmentation Model.<br>
 
 <br>
