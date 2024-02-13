@@ -4,8 +4,9 @@ This is the second experimental Image Segmentation project for Pancreas based on
 the <a href="https://github.com/sarah-antillia/Tensorflow-Image-Segmentation-API">Tensorflow-Image-Segmentation-API</a>, and 
 <a href="https://drive.google.com/file/d/141HL4nRT8LZoqtxk2un6cM-LDuZa7jtO/view?usp=sharing"> Cropped-Pancreas-ImageMask-Dataset</a>
 <br>
+<br>
 In order to improve segmentation accuracy, we will use a dataset augmentation Python script <a href="./src/ImageMaskAugmentor.py">
-ImageMaskAugmentor.py</a>  to train a Pancreas Segmentation Model.<br>
+ImageMaskAugmentor.py</a> to train a Pancreas Segmentation Model.<br>
 
 <br>
 As a first trial, we use the simple UNet Model 
@@ -220,11 +221,10 @@ python ../../../src/TensorflowUNetGeneratorTrainer.py ./train_eval_infer.config
 Train console output:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/train_console_output_at_epoch_53.png" width="720" height="auto"><br>
 <br>
-As shown above,at epoch 43, the val_loss became 0.1609, which is slightly better (lower) than that value 0.2259 of 
+As shown above, at epoch 43, the val_loss became 0.1609, which is slightly better (lower) than that value 0.2259 of 
 the console output of the first experiment.<br>
 <br>
 Train console output of the first experiment:<br>
-
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/prev_train_console_output_at_epoch_78.png" width="720" height="auto">
 
 <br>
@@ -233,7 +233,7 @@ Train metrics:<br>
 Train losses:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/train_losses_at_epoch_53.png" width="720" height="auto"><br>
 <br>
-The following debug setting is helpful whether your paramters settings in [augmentor] section are good or not.
+The following debug setting is helpful whether your parameters settings in [augmentor] section are good or not.
 <pre>
 [generator]
 debug     = True
