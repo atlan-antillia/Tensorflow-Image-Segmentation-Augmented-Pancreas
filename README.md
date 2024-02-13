@@ -80,7 +80,7 @@ Please expand the downloaded ImageMaskDataset and place them under <b>./dataset<
 <img src ="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/Cropped-Pancreas_Statistics.png" width="512" height="auto"><br>
 As mentioned in <a href="https://github.com/atlan-antillia/Pancreas-ImageMask-Dataset">Pancreas-ImageMask-Dataset</a>, 
 by applying two types of center cropping operations to the original images and masks files, the number of those files in this dataset has increased 
-three-fold from the previous Non-Cropped Panceas dataset.
+three-fold from the previous Non-Cropped Pancreas dataset.
 However, simply increasing the number of image and mask files does not necessarily lead to direct improvement in the segmentation accuracy.
 
 <br>
@@ -201,7 +201,6 @@ image_datapath = "../../../dataset/Cropped-Pancreas/valid/images/"
 mask_datapath  = "../../../dataset/Cropped-Pancreas/valid/masks/"
 </pre>
 
-
 For more detail on ImageMaskAugmentor.py, please refer to
 <a href="https://github.com/sarah-antillia/Image-Segmentation-ImageMaskDataGenerator">Image-Segmentation-ImageMaskDataGenerator </a>.
     
@@ -211,7 +210,7 @@ For more detail on ImageMaskAugmentor.py, please refer to
 Please move to a <b>./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas</b> directory,<br>
 and run the following bat file to train TensorflowUNet model for Pancreas.<br>
 <pre>
-./1.train_by_generator
+./1.train_by_generator.bat
 </pre>
 , which simply runs <a href="../../../src/TensorflowUNetGeneratorTrainer.py">TensorflowUNetGeneratorTrainer.py </a>
 in the following way.
@@ -254,7 +253,6 @@ Sample masks in generated_masks_dir<br>
  width="1024" height="auto"><br>
 
 
-
 <h3>
 3.2 Evaluation
 </h3>
@@ -272,16 +270,13 @@ This will evaluate segmentation accuracy of the train model by using dataset spe
 image_datapath = "../../../dataset/Cropped-Pancreas/test/images/"
 mask_datapath  = "../../../dataset/Cropped-Pancreas/test/masks/"
 </pre>
-
 Evaluation console output:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/evaluate_console_output_at_epoch_53.png" width="720" height="auto"><br>
 <br>
 Although enhanced test dataset is used here, the loss score above is slightly better than that of the first experiment
 <br>
 Evaluation console output of the first experiment:<br>
-<img src = "./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/prev_evaluate_console_output_at_epoch_78.png" width="720" height="auto">><br>
-
-
+<img src = "./projects/TensorflowSlightlyFlexibleUNet/Augmented-Pancreas/asset/prev_evaluate_console_output_at_epoch_78.png" width="720" height="auto"><br>
 
 <h2>
 3.3 Inference
