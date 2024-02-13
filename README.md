@@ -133,18 +133,14 @@ eval_dir      = "./eval"
 
 image_datapath = "../../../dataset/Cropped-Pancreas/train/images/"
 mask_datapath  = "../../../dataset/Cropped-Pancreas/train/masks/"
-
 create_backup  = False
 learning_rate_reducer = False
 save_weights_only = True
 
-
-# On GENERATOR_MODE, valid dataset of [eval] section will be used to train unet model.
 [eval]
 image_datapath = "../../../dataset/Cropped-Pancreas/valid/images/"
 mask_datapath  = "../../../dataset/Cropped-Pancreas/valid/masks/"
 
-# ON GENERATOR_MODE, dataset of [test] section will be used to evaluate the trained unet model.
 [test] 
 image_datapath = "../../../dataset/Cropped-Pancreas/test/images/"
 mask_datapath  = "../../../dataset/Cropped-Pancreas/test/masks/"
