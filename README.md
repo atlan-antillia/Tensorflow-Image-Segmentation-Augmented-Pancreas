@@ -211,7 +211,7 @@ and run the following bat file to train TensorflowUNet model for Pancreas.<br>
 <pre>
 ./1.train_by_generator.bat
 </pre>
-, which simply runs <a href="../../../src/TensorflowUNetGeneratorTrainer.py">TensorflowUNetGeneratorTrainer.py </a>
+, which simply runs <a href="./src/TensorflowUNetGeneratorTrainer.py">TensorflowUNetGeneratorTrainer.py </a>
 in the following way.
 <pre>
 python ../../../src/TensorflowUNetGeneratorTrainer.py ./train_eval_infer.config
